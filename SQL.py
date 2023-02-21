@@ -5,7 +5,7 @@ from sshtunnel import SSHTunnelForwarder
 
 username = cfg.sql["user"]
 password = cfg.sql["passwd"]
-dbName = "p32001_12"
+dbName = "p42002_07"
 
 # 
 # 

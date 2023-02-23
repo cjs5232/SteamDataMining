@@ -53,6 +53,8 @@ def startEDA(conn):
     cursor = conn.cursor()
 
     data = pd.read_sql('select * from sample', conn)
+    data = data.drop("Index", axis='columns')
+    data = data.drop("review_id", axis='columns')
 
     UnivariateAnalysis(data)
 

@@ -7,13 +7,13 @@ username = cfg.sql["user"]
 password = cfg.sql["passwd"]
 dbName = "p42002_07"
 
-
 #
 # 
 # YOU GOTTA RUN THIS FILE FIRST!!!
 # 
 #
 from EDA import *
+
 
 def main():
     try:
@@ -40,7 +40,7 @@ def main():
 
             print("Database connection established")
 
-            UnivariateAnalysis(conn, "author.num_games_owned")
+            startEDA(conn)
 
     except Exception as e:
         print(e)

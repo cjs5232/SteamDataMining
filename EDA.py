@@ -22,3 +22,4 @@ def UnivariateAnalysis(conn, column):
     # Dont run these yet lmao
     #cursor.execute(f'select "{column}" from steam_reviews')
     #numpy.std(cursor.fetchone())
+
